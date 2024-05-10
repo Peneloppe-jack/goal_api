@@ -6,9 +6,17 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-image: url('img/ionela-mat-unsplash.jpg');
+  position:sticky;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 a {
@@ -31,7 +39,7 @@ li {
 h1,
 h2,
 h3 {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -77,18 +85,18 @@ h3 {
 
 .heading {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 
 .heading p {
-  color: #828282;
+  color: black;
 }
 
 .goals {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
@@ -212,4 +220,17 @@ h3 {
   .heading p {
     font-size: 1.5rem;
   }
+}
+
+/*This One is the cutest scrollbar possible*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:#f1683a;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius:  50px;
 }
